@@ -1,0 +1,30 @@
+﻿@model List<Employee>
+<div>
+
+	<table border="1" cellpadding="8">
+		<tr>
+			<th>Employee Name</th>
+			<th>Email</th>
+			<th>Department</th>
+			<th>Actions</th>
+		</tr>
+
+		@foreach (var emp in Model)
+		{
+			<tr>
+				<td>@emp.EmployeeName</td>
+				<td>@emp.Email</td>
+				<td>@emp.Department</td>
+				<td>
+					<a asp-action="Edit">Edit</a>
+					<a asp-action="Delete" asp-route-name ="@emp.EmployeeName">Delete</a></td>
+			</tr>
+		
+		}
+	</table>
+	
+		<input type="text" placeholder="search"/>
+	   <button type="submit">Search</button>
+
+
+</div>

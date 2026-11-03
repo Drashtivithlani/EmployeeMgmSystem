@@ -1,0 +1,22 @@
+﻿
+@model Employee
+<div>
+	<form asp-action="Create" method="post">
+		<label asp-for="EmployeeName">Employee Name</label>
+		<input asp-for="EmployeeName"/>
+		<span asp-validation-for="EmployeeName"></span>
+
+		<label asp-for="Email">Email</label>
+		<input asp-for="Email" />
+		<span asp-validation-for="Email"></span>
+
+		<label asp-for="Department">Department</label>
+		<input asp-for="Department" />
+		<span asp-validation-for="Department"></span>
+
+		<button type="submit">Add Employee</button>
+
+		
+
+	</form>
+</div>
