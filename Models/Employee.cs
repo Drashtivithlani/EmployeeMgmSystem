@@ -8,6 +8,7 @@ namespace EmployeeMgmSystem.Models
         public string EmployeeName { get; set; }
 
         [Required]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]

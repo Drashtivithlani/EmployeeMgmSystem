@@ -1,0 +1,13 @@
+﻿@model Employee
+<div>
+	<form asp-action="Edit" method="post">
+		<input type="hidden" name="current" value="@Model.EmployeeName" />
+		<label asp-for="EmployeeName">Employee Name</label>
+		<input asp-for="EmployeeName" />
+		<label asp-for="Email">Email</label>
+		<input asp-for="Email" />
+		<label asp-for="Department">Department</label>
+		<input asp-for="Department" />
+		<button type="submit">Edit</button>
+	</form>
+</div>
